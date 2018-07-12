@@ -1,0 +1,19 @@
+<div>
+  <p>
+  <label for="">Name:</label>
+  <input type="text" id="name-input" [(ngModel)]="name"><br><br></p>
+</div>
+<div>
+    <p>
+  <label for="">Address:</label>
+  <input type="text" id="address-input" [(ngModel)]="address"><br><br></p>
+</div>
+<div>
+    <p>
+  male<input type="radio" [checked]="gender===male" value="male"[(ngModel)]="gender" name="selector">
+  female<input type="radio" [checked]="gender===female" value="female"[(ngModel)]="gender" name="selector">
+  </p>
+</div>
+<div>
+  <button type="submit" (click)="verify()" style="color:black">submit</button>
+</div>
