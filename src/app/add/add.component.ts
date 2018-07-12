@@ -6,7 +6,6 @@ import { IEmployee } from '../modal/employee.interface';
   styleUrls: ['./add.component.css']
 })
 export class AddComponent implements OnInit {
-
   name: string;
   address: string;
   gender: string;
@@ -15,7 +14,6 @@ export class AddComponent implements OnInit {
    const details = localStorage.getItem('employeeDetails');
    this.employeeArray = JSON.parse(details) || [];
  }
-
  verify() {
    const employee: IEmployee = { 'name': this.name, 'address': this.address, 'gender': this.gender };
    this.employeeArray.push(employee);
@@ -26,6 +24,4 @@ export class AddComponent implements OnInit {
    // Update the object into storage
    localStorage.setItem('employeeDetails', JSON.stringify(this.employeeArray));
  }
-
-
 }

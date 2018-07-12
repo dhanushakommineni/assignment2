@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { IEmployee } from '../modal/employee.interface';
-
 @Component({
   selector: 'app-show',
   templateUrl: './show.component.html',
